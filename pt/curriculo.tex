@@ -1,0 +1,188 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Antonio Fernando}{S. Ladeia}
+\title{Analista de sistemas}                               % optional, remove / comment the line if not wanted
+\address{Rua Lalita Costa, 163 - Edf. Iberis - Ap 004 - Cond. Vila Verde - Vila Laura}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+55~(71)~99275~2361}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{contato@antonioladeia.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.antonioladeia.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{antonioladeia}                        % optional, remove / comment the line if not wanted
+\social[twitter]{antoniofsladeia}                             % optional, remove / comment the line if not wanted
+\social[github]{ladeia}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{UTF8}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Educação}
+%\cventry{2019(previsão)}{Especialização}{Estácio}{Salvador}{\textit{Ciência de dados e big data analytics - em curso}}{}
+
+%\cventry{2021(previsão)}{Graduação}{Instituto Federal de Educação Ciência e Tecnologia da Bahia - IFBA}{Salvador}{\textit{Licenciatura em matemática - em curso}}{}
+
+\cventry{2011--2015}{Graduação}{Instituto Federal de Educação Ciência e Tecnologia da Bahia - IFBA}{Salvador}{\textit{Tecnologia em análise e desenvolvimento de sistemas}}{}  
+
+%\cventry{2016}{Curso Livre}{Coursera e Instituto Tecnológico da Aeronáutica - ITA}{online}{\textit{Orientação a Objetos com Java}}{}  
+
+%\cventry{2016}{Curso Livre}{Coursera e Instituto Tecnológico da Aeronáutica - ITA}{online}{\textit{TDD – Desenvolvimento de software guiado por testes}}{}   
+
+%\cventry{2016}{Curso Livre}{Coursera e Universidade Rice}{online}{\textit{An Introduction to Interactive Programming in Python (Part 1)}}{}  
+
+%\cventry{2015}{Curso Livre}{Coursera e Universidade de Michigan}{online}{\textit{Python Data Structures}}{}  
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Experiência}
+\cventry{2022 - 2024}{System Analyst}{Mercado Livre}{São Paulo/Remoto}{}{No Mercado Livre atuei no time de Billing Info, responsável por gerenciar e consolidar as informações de faturação do comprador. Trabalhei desenvolvendo microserviços em diversas linguagens e frameworks como Kotlin, Java, Groovy, Grails, Spring e NodeJs. Trabalei com monitoramento, observabilidade além da escalibilidade das aplicações. Atuei com a plataforma proprietária da empresa para prover os serviços de cloud. Fiz parte do programa voluntário Secutity Guardians, onde era o responsável pela segurança das aplicações do time e pela capacitação técnica dos membros do domínio. }
+\cventry{2021 - 2022}{Sr. System Analyst}{BRQ}{São Paulo/Remoto}{}{Enquanto analista de sistemas, atuei na manutenção e criação de microserviços do time core de cartões, time responsável por suportar as operações referentes a cartões de crédito e débito e intermediar a comunicação com outros serviços como anti-fraude, motor de crédito, notificações, entre outros. Atuei com a stack de Kotlin e Spring utilizando alguns recursos da AWS como: CloudFormation, Secret Manager, ECR, SNS, SQS, S3, entre outros. }
+\cventry{2019 - 2021}{Sr. System Analyst}{Wex Inc}{Salvador}{}{Enquanto analista de sistemas, prestei manutenção em todos os projeto e serviços do time ClearView, aplicação responsável por consolidadar dados de frotas de veículos, gerar informações sobre este dados e alertar os gestores sobre pontos de atenção. Trabalhei também com a manutenção do ambiente de testes utilizando alguns dos serviços da AWS como S3, SES, CloudWatch, EC2 (Ubuntu), RedShift e Secret Manager. Tecnologias Utilizadas: Java 8+, Spring Boot, Oracle Database, Testes automatizados, AWS, GitLab, Scrum, Pivotal Tracker e chef. }
+\cventry{2019 - 2019}{Desenvolvedor de software}{2B Educação}{Salvador}{}{Líder do time de desenvolvimento. Trabalho com manutenção de sistemas legados e web crawlers, análise e desenvolvimento de sistemas web utilizando as tecnologias Php, Python3 e MySql.}
+\cventry{2018 - 2019}{Analista de sistemas}{Capgemini}{Salvador}{}{Trabalho com análise de projetos, levantamento de requisitos, codificação, resolução de incidentes e validações de soluções para enriquecimento de dados, utilizando as tecnologias java, SQL server, web services, spring boot, entre outras.}
+% \cventry{2018--2019}{Bolsista do programa mediotec}{Superintendência de Educação Profissional - SUPROF}{Lauro de Freitas}{}{Professor das disciplinas: de "Análise e projeto de sistemas" e "Lógica de programação".}
+%\cventry{2018--2018}{Desenvolvedor}{MobApps}{Salvador}{}{Trabalho com análise, concepção, arquitetura e codificação de plataforma de soluções customizadas para mobilidade, utilizando as tecnologias php, parse server, nodejs, integração com gateways de pagamento e android.\newline{}}
+\cventry{2016 - 2018}{Analista de sistema}{Instituto Recôncavo de tecnologia}{Salvador}{}{Trabalho com concepção de projetos, levantamento de requisitos, arquitetura de soluções, codificação, liderança de projetos.\newline{}
+Desenvolvimento de aplicação servidora multiplataforma para gerenciamento de mídias e produtos utilizando as tecnologias , Java, Swing, JDBC, JSP e JSF.\newline{}
+Desenvolvimento de aplicação para plataforma de pontos de venda - POS, embarcados, utilizando as tecnologias C\#, .NET, C/C++, make, cmake, comunicação serial, comandos AT.\newline{}
+Desenvolvimento de aplicação desktop para testes em plataforma POS com as tecnologias C\#, Sql server e comunicação serial.\newline{}
+Idealização, criação e liderança de grupo de estudos em hardware e laboratório de embarcados e conectividade.\newline{}
+%Concepção e elaboração de projeto técnico para submissão em edital Innova mineral, aprovado em 1ª fase.\newline{}
+%Desenvolvimento de relatórios demonstrativo anuais de projetos para Ministério de Ciência e Tecnologia.\newline{}
+%Concepção e desenvolvimento de propostas técnicas para captação de novos projetos.\newline{}
+Organização de eventos de difusão de conhecimento interno(sessões técnicas e \textit{coding dojos}) da empresa.\newline{}}
+%\cventry{2015 - 2016}{Analista de sistema pleno}{Ideia SEO}{Salvador}{}{Trabalho com concepção de projetos, levantamento de requisitos, arquitetura de soluções, codificação, liderança de projetos.\newline{}%
+%Desenvolvimento web de aplicação para gerenciamento interno de campanhas de marketing e aprovação de peças publicitárias usando as tecnologias python, web2py, mysql, html, css e javascript.\newline{}
+%Desenvolvimento de rede social com as tecnologias python, django, postgresql, APIs de integração e javascript.\newline{}
+%}
+% \cventry{2014--2015}{Programador}{Instituto Recôncavo de Tecnologia}{Salvador}{}{Desenvolvimento em java para sistemas de provisionamento de pacotes para sistemas embarcados de entretenimento, desenvolvimento em camadas, uso de padrões arquiteturais e padrões de projeto.  \newline 
+% Desenvolvimento de sistemas de controle de fluxo de processos internos. \newline{}
+%em ASP.NET, C\#, javascript, Razor MVC, SQL server.  \newline{} 
+%Consultor técnico em criação de propostas de captação de clientes.\newline{}
+% Criação de provas de conceito de aplicações mobile e  sistemas embarcados.\newline{}
+%usando as tecnologias C++/QT e javascript.\newline{}
+% }
+%\cventry{2013--2014}{Estagiário de desenvolvimento e testes de software}{Instituto Recôncavo de Tecnologia}{Salvador}{}{Testes funcionais caixa preta e usabilidade de software. \newline Apoio a implementação de produtos em plataformas web, desktop, mobile e embarcados com as tecnologias java, PHP e C++/QT.\newline{}
+%Criação de provas de conceito de aplicações mobile e aplicações de testes para sistemas embarcados usando as tecnologias C++/QT e javascript.\newline{}\newline{}}
+
+\section{Idiomas}
+\cvitemwithcomment{Inglês}{intermediário}{Lê bem, escreve bem, fala pouco}
+\cvitemwithcomment{Espanhol}{básico}{Lê pouco, escreve pouco, fala pouco}
+
+\section{Habilidades computacionais}
+\textbf{Habilidades em programação} Programação estruturada, programação orientada a objetos, testing drive development - TDD, padrões de projeto, padrões arquiteturais, princípios SOLID e Clean Code.\newline
+\textbf{Banco de dados} Bancos de dados relacionais e bancos de dados NOSQL.\newline
+\textbf{Cloud Computing} Experiência com diversos serviços de cloud, como AWS, S3, EC2, Cloud Front, etc.\newline
+\textbf{Segurança de aplicações} Tenho experiência em escrever aplicações para evitar os maiores problemas de segurança como injecttion, XSS, broken authentication, broken access control, etc.\newline%\textbf{Data Science} Conceitos em machine learning, classificação e predição de dados.\newline
+%\textbf{Eletrônica e embarcados} Conceitos de eletônica, embarcados, circuitos, conectividade e IOT.\newline
+
+\section{Atividades extras}
+
+\textbf{Contribuidor voluntário no Debian}: Faço parte da comunidade Brasileira do Debian, onde empacoto alguns softwares e ajudo na organização e promoção de eventos como o Debian Day.\newline
+
+%\textbf{Voluntário como programador}: Aplicativo para dispositivos móveis de difusão de conhecimento da cultura do candomblé/Iorubá pelo aplicativo de Mãe Stella de Oxóssi.\newline
+%\textbf{Mentor de programação na plataforma Training Center}. Mentoria de pessoas iniciantes em programação afim de orientar no aprendizado de tecnologias e ajudar seu desenvolvimento profissional.\newline
+
+%\textbf{Membro ativo da comunidade software livre/open source de salvador}: Organiza e promove a utilização e empoderamento de tecnologias livres através de palestras, mini-cursos, eventos e discussões.\newline
+
+%\textbf{Membro do Raul Hacker Club o primeiro Hacker Space de Salvador}: trabalha ativamente na manutenção e crescimento do grupo, promove e organiza atividades, projetos e eventos como o Grupo de Estudos em Eletrônica e Arduíno – GEEA, estudos em software embarcado, grupo de estudos em Python, Embarcados e Gpiosos(evento), Firefox Day(evento), etc. Mais informações em http://raulhc.cc/\newline
+
+%\textbf{Voluntário e contribuidor na Mozilla Foundation}: Membro ativo na comunidade Mozilla Brasil e contribuidor direto com a Fundação Mozilla. Atua através de contribuições nos segmentos de localização de produtos e artigos, desenvolvimento de aplicativos para a plataforma Firefox OS (mobile), desenvolvimento de addons para o navegador Mozilla Firefox, contribuições de código no Firefox Desktop, suporte a usuário e palestras e organização de eventos (Fórum Internacional de Software Livre - FISL, Campus Party, Festival Latino Americano de Instalação de Software Livre - Flisol, Software Freedom Day, Semana de Computação da UFBA – Secomp, Firefox Day).\newline
+
+%\textbf{Desenvolvimento de Site Entretodos 2012 e 2013}: Trabalhando em parceria com um designer, desenvolveu o web site do Festival de Curtas Metragens em Direitos Humanos ENTRETODOS, realizado pela Secretaria Municipal de Direitos Humanos e Cidadania (SMDHC) e pela Secretaria Municipal de Cultura (SME), São Paulo.\newline
+
+%\section{Eventos e trabalhos}
+
+%\textbf{Mapeando o mundo com Google Maps API}. Antonio Ladeia. Festival Latino Americano de Instalação de Software Livre - Flisol. Salvador/BA. 2013.\newline
+
+%\textbf {Raul hacker club, o início de um hacker space}. Antonio Ladeia, Rafael Gomes e Vj Pixel. Fórum Internacional de Software Livre - FISL. Porto Alegre/RS. 2014.\newline
+
+%\textbf{Mozilla persona}. Antonio Ladeia e Qaiq Alves. Fórum Internacional de Software Livre - FISL. Porto Alegre/RS. 2014.\newline
+
+%\textbf{O maravilhoso mundo das extensões do Firefox}. Antonio Ladeia. Campus Party Recife. Recife/PE. 2015.\newline
+
+%\textbf{Desenvolvimento de apps com Firefox OS}. Antonio Ladeia. Festival Latino Americano de Instalação de Software Livre - Flisol. Salvador/BA. 2014.\newline
+
+%\textbf{Desenvolvimento de apps com Firefox OS}. Antonio Ladeia. Semana de computação da UFBA - Secomp. Salvador/BA. 2014.\newline
+
+%\textbf{O maravilhoso mundo das extensões do Firefox}. Antonio Ladeia. Festival Latino Americano de Instalação de Software Livre - Flisol. Salvador/BA. 2015.\newline
+
+%\textbf{Contribuindo para um projeto FOSS - Free and Open Source
+%Software}. Antonio Ladeia. Festival Latino Americano de Instalação de Software Livre - %Flisol. Salvador/BA. 2016.\newline
+
+%\textbf{Contribuindo para um projeto FOSS - Free and Open Source
+%Software}. Antonio Ladeia. Semana de engenharia de computação e tecnológica - Secomtec UFBA. %Salvador/BA. 2016.\newline
+
+% \section{Prêmios e participações} 
+
+% \textbf{Vencedor do hackathon + Salvador}. Desenvolvimento de um marketplace de experiências culturais para o centro histórico de Salvador. Salvador/BA. 2017.\newline
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): 
+%\renewcommand{\refname}{Eventos e trabalhos}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}
+% 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
